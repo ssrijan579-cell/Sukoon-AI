@@ -1,0 +1,34 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Dataset files
+data/raw/
+data/processed/
+data/annotations/
+
+# Model weights
+models/
+*.pt
+*.pth
+*.safetensors
+*.onnx
+
+# Logs and experiments
+mlruns/
+logs/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+EOF
